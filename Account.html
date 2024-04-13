@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Sign Up</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- icons link -->
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <!-- random-icons links -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <!-- G-fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">GGEZ.to</a>
+
+    <ul class="navlist">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="cart.html">Products</a></li>
+      <li><a href="#">Services</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="#"><i class="ri-search-2-line"></i></a>
+      <button id="view-cart"><i class="ri-shopping-cart-2-line"></i></button>
+      <a href="Account.html"><i class="ri-user-3-line"></i></a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+
+</header>
+
+<section class="login-section">
+  <div class="login-container" id="login-container" data-aos="fade-in">
+    <h2>Login</h2>
+    <form id="login-form">
+      <div class="form-group">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" name="login-email" required>
+      </div>
+      <div class="form-group">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" name="login-password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
+  </div>
+  <div class="signup-container" id="signup-container">
+    <h2>Sign Up</h2>
+    <form id="signup-form">
+      <div class="form-group">
+        <label for="signup-email">Email</label>
+        <input type="email" id="signup-email" name="signup-email" required>
+      </div>
+      <div class="form-group">
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" name="signup-password" required>
+      </div>
+      <div class="form-group">
+        <label for="signup-phone">Phone Number</label>
+        <input type="tel" id="signup-phone" name="signup-phone" required>
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2024 GGEZ Services.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1450,
+    });
+  </script>
+
+</body>
+</html>
